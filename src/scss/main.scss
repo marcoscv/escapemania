@@ -7,6 +7,14 @@
 }
 
 .navbar-escape {
+  transition: padding 0.2s ease;
+  will-change: padding;
+
+  &.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .navbar-nav {
     font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
 
@@ -22,8 +30,10 @@
       }
     }
 
-    .nav-item.active a {
-      color: $primary;
+    .nav-item, .nav-link {
+      &.active a, &.active {
+        color: $primary !important;
+      }
     }
   }
 }
