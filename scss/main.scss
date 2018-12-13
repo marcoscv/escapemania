@@ -2,11 +2,23 @@
 
 @import "./node_modules/bootstrap/scss/bootstrap";
 
+body {
+  position: relative;
+}
+
 #mainContent {
   padding-top: 80px;
 }
 
 .navbar-escape {
+  transition: padding 0.2s ease;
+  will-change: padding;
+
+  &.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .navbar-nav {
     font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
 
