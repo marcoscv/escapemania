@@ -1,0 +1,29 @@
+@import "variables";
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+#mainContent {
+  padding-top: 80px;
+}
+
+.navbar-escape {
+  .navbar-nav {
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+
+    a.nav-link {
+      @include media-breakpoint-up(md) {
+        padding: .5rem 1rem;
+      }
+
+      color: #FFF;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    .nav-item.active a {
+      color: $primary;
+    }
+  }
+}
