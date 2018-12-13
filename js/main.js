@@ -47,12 +47,6 @@ $.fn.extend({
       $('.navbar-collapse').collapse('hide');
     });
   
-    // Activate scrollspy to add active class to navbar items on scroll
-    $('body').scrollspy({
-      target: '#navbarEscape',
-      offset: 100
-    });
-  
     // Collapse Navbar
     var navbarCollapse = function() {
       if ($("#navbarEscape").offset().top > 100) {

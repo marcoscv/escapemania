@@ -2,10 +2,6 @@
 
 @import "./node_modules/bootstrap/scss/bootstrap";
 
-body {
-  position: relative;
-}
-
 #mainContent {
   padding-top: 80px;
 }
@@ -34,8 +30,10 @@ body {
       }
     }
 
-    .nav-item.active a {
-      color: $primary;
+    .nav-item, .nav-link {
+      &.active a, &.active {
+        color: $primary !important;
+      }
     }
   }
 }
