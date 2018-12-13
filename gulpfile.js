@@ -3,6 +3,7 @@ const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const pug = require('gulp-pug');
 const cleanCSS = require('gulp-clean-css');
+const ghPages = require('gulp-gh-pages');
 
 // compile custom SCSS files
 gulp.task('sass', () => {
@@ -64,6 +65,12 @@ gulp.task('serve', ['sass','js','css','pug'], () => {
   gulp.watch('src/**/*').on('change',
     browserSync.reload
   );
+});
+
+//Publish gh-pages
+gulp.task('deploy', function() {
+  return gulp.src('./src/**/*')
+    .pipe(ghPages());
 });
 
 // defaul task typing 'gulp'
