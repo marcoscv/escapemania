@@ -67,7 +67,7 @@ gulp.task('copy-js', () => {
 });
 
 // init develop Server
-gulp.task('serve', ['sass','pug', 'minify-images'], () => {
+gulp.task('serve', ['sass','pug'], () => {
   browserSync.init({
     server: './src'
   });
@@ -81,6 +81,8 @@ gulp.task('serve', ['sass','pug', 'minify-images'], () => {
   );
 });
 
+gulp.task('build', ['pug', 'sass', 'minify-js', 'minify-images', 'minify-css'])
+
 //Publish gh-pages
 gulp.task('deploy', () => {
   return gulp.src('./src/**/*')
@@ -88,4 +90,4 @@ gulp.task('deploy', () => {
 });
 
 // defaul task typing 'gulp'
-gulp.task('default', ['sass', 'minify-js', 'minify-css', 'minify-images', 'serve'])
+gulp.task('default', ['sass', 'minify-js', 'minify-images', 'minify-css', 'serve'])
