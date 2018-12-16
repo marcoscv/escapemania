@@ -1,0 +1,29 @@
+- active = 'VALE REGALO'
+
+include includes/_mixins.pug
+include includes/_header.pug
+
+#mainContent.container-fluid.pt-5
+    .bg-dark.row
+        .container.mt-5
+            .row.text-center
+                .col-md-10.mx-auto
+                    img.my-3(src="images/vale_web.jpg", alt="Vale")
+
+    .color-bg-game-3.row
+        .container
+            .row.py-2.py-sm-5
+                .col-md-4
+                    img.img-fluid(src="images/lilith-peq.jpg", alt="")
+                .col-md-8.text-center
+                    h1.mt-4.mt-md-0 JUEGO 3: La tienda de muñecas de Lilith
+                    p Este juego es de una temática con estilo misterio y terror.
+                    p.small ** Se puede jugar una versión “light” sin miedo, avisando al encargado.
+                    p.text-warning 2-5 personas 65€ (no se puede 6)
+                        img.ml-2.mr-1.img-fluid(src="images/flag-spanish.jpg", alt="Juego disponible en idioma Español")
+                        small (not available in english)
+
+            .widget-iframe-content(data-event-id='d2def5a4' data-app-url='https://www.ticketself.com/' data-event-url='https://www.ticketself.com/event/d2def5a4?widget=1&isgift=1&hidegift=true')  Compra aqu&iacute; tus entradas
+            script(type='text/javascript' src='https://www.ticketself.com/assets/default/js/widget-multi-iframe.js')
+
+include includes/_footer.pug
