@@ -1,4 +1,5 @@
 @import "variables";
+@import "./src/webfonts/css/fontawesome-free-all.scss";
 
 // Bootrap in parts
 @import "./node_modules/bootstrap/scss/functions";
@@ -36,8 +37,6 @@
 //@import "./node_modules/bootstrap/scss/carousel";
 @import "./node_modules/bootstrap/scss/utilities";
 //@import "./node_modules/bootstrap/scss/print";
-
-@import "./src/webfonts/css/fontawesome-free-all.scss";
 
 .nav-to-top {
   position: fixed;
