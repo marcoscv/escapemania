@@ -1,3 +1,5 @@
+@import "./src/webfonts/css/fontawesome-free-all.scss";
+
 @import "variables";
 
 // Bootrap in parts
@@ -22,10 +24,10 @@
 @import "./node_modules/bootstrap/scss/navbar";
 //@import "./node_modules/bootstrap/scss/card";
 //@import "./node_modules/bootstrap/scss/breadcrumb";
-@import "./node_modules/bootstrap/scss/pagination";
+//@import "./node_modules/bootstrap/scss/pagination";
 @import "./node_modules/bootstrap/scss/badge";
 @import "./node_modules/bootstrap/scss/jumbotron";
-//@import "./node_modules/bootstrap/scss/alert";
+@import "./node_modules/bootstrap/scss/alert";
 //@import "./node_modules/bootstrap/scss/progress";
 //@import "./node_modules/bootstrap/scss/media";
 //@import "./node_modules/bootstrap/scss/list-group";
@@ -35,11 +37,37 @@
 //@import "./node_modules/bootstrap/scss/popover";
 //@import "./node_modules/bootstrap/scss/carousel";
 @import "./node_modules/bootstrap/scss/utilities";
-@import "./node_modules/bootstrap/scss/print";
+//@import "./node_modules/bootstrap/scss/print";
 
+.nav-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 50px;
+  display: none;
+}
 
-#mainContent {
-  padding-top: 80px;
+.color-game-1 {
+  color: $game-primary-1-color;
+}
+
+.color-game-2 {
+  color: $game-primary-2-color;
+}
+
+.color-game-3 {
+  color: $game-primary-3-color;
+}
+
+.color-bg-game-1 {
+  background-color: $game-bg-1-color;
+}
+
+.color-bg-game-2 {
+  background-color: $game-bg-2-color;
+}
+
+.color-bg-game-3 {
+  background-color: $game-bg-3-color;
 }
 
 .navbar-escape {

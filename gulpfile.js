@@ -49,7 +49,7 @@ gulp.task('pug', function() {
   return gulp.src('src/templates/*.pug')
   .pipe(pug({
     pretty: false,
-    cache: true
+    cache: false
   }))
   .pipe(gulp.dest('src'))
   .pipe(browserSync.stream());
@@ -75,14 +75,14 @@ gulp.task('serve', ['sass','pug', 'minify-images'], () => {
   gulp.watch(['src/templates/**/*.pug','src/templates/**/*.txt'], ['pug']);
   gulp.watch(['src/scss/*.scss'], ['sass','minify-css']);
   gulp.watch(['src/images/**/*'], ['minify-images']);
-  gulp.watch(['src/js/**/*'], ['minify-js']);
+  gulp.watch(['src/js/*'], ['minify-js']);
   gulp.watch('src/**/*').on('change',
     browserSync.reload
   );
 });
 
 //Publish gh-pages
-gulp.task('deploy', ['sass', 'pug', 'minify-js', 'minify-css', 'minify-images'], () => {
+gulp.task('deploy', () => {
   return gulp.src('./src/**/*')
     .pipe(ghPages());
 });

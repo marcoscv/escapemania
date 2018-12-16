@@ -52,7 +52,7 @@ $.fn.extend({
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
           $('html, body').animate({
-            scrollTop: (target.offset().top - 70)
+            scrollTop: (target.offset().top - 65)
           }, 1000, "easeInOutExpo");
           return false;
         }
@@ -68,8 +68,10 @@ $.fn.extend({
     var navbarCollapse = function() {
       if ($("#navbarEscape").offset().top > 100) {
         $("#navbarEscape").addClass("navbar-shrink");
+        $(".nav-to-top").show("slow");
       } else {
         $("#navbarEscape").removeClass("navbar-shrink");
+        $(".nav-to-top").hide("slow");
       }
     };
     // Collapse now if page is not at top

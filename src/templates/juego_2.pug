@@ -1,0 +1,31 @@
+- active = 'INICIO'
+
+include includes/_mixins.pug
+include includes/_header.pug
+
+#mainContent.container-fluid.mt-5
+    #imagenes.row.pt-1.pt-sm-3.color-bg-game-2
+        .container
+            .row.pt-2.pt-sm-5
+                .col-md-4 
+                    img.img-fluid(src="images/harrison-vinilo-peq.jpg", alt="")
+                .col-md-8
+                    h1.mt-4.mt-md-0 JUEGO 2: Harrison Jones en busca del Sexto Elemento
+                    p Este juego es de una temática con estilo Indiana Jones.
+                    p.text-warning 2-5 personas 65€ (6 personas 75€)
+                        img.ml-2.mr-1.img-fluid(src="images/flag-spanish.jpg", alt="Juego disponible en idioma Español")
+                        img.mx-1.img-fluid(src="images/flag-english.jpg", alt="Juego disponible en idioma Inglés")
+
+                    .alert.alert-danger.text-center.mt-4
+                        i.fa.fa-exclamation.mr-2
+                        span.alert-heading.font-weight-bold ATENCIÓN:
+                        span Tenemos dos locales, este juego está en la dirección:
+                    .text-center.mb-2
+                        a.text-white(href='https://goo.gl/maps/AdAByzCoao22') c/ Rafaela Ybarra 7 – 48014 – Bilbao (Vizcaya)
+
+        .container.widget-iframe-content(data-event-id='804ca193' data-app-url='https://www.ticketself.com/' data-event-url='https://www.ticketself.com/event/804ca193?widget=1&hidegift=true')  Compra aqu&iacute; tus entradas
+        script(type='text/javascript' src='https://www.ticketself.com/assets/default/js/widget-multi-iframe.js')
+
+
+
+include includes/_footer.pug
