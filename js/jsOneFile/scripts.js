@@ -68,8 +68,10 @@ $.fn.extend({
     var navbarCollapse = function() {
       if ($("#navbarEscape").offset().top > 100) {
         $("#navbarEscape").addClass("navbar-shrink");
+        $(".nav-to-top").show("slow");
       } else {
         $("#navbarEscape").removeClass("navbar-shrink");
+        $(".nav-to-top").hide("slow");
       }
     };
     // Collapse now if page is not at top

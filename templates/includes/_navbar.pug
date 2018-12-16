@@ -4,16 +4,17 @@ nav#navbarEscape.navbar.navbar-escape.navbar-expand-lg.navbar-dark.bg-dark.fixed
       img.logo(src='images/escape_mania_logo.png')
     button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarColor01' aria-controls='navbarColor01' aria-expanded='false' aria-label='Toggle navigation')
       span.navbar-toggler-icon
-    #navbarColor01.collapse.navbar-collapse
+    .collapse.navbar-collapse
       ul.navbar-nav.ml-auto
         if relative
-          +item('INICIO', './')
+          +item('INICIO', '#top')
           +item('IMÁGENES', '#imagenes')
           +item('DÓNDE ESTAMOS', '#donde_estamos')
           +item('PREGUNTAS', '#preguntas')
           +item('CONTACTAR', './contactar.html')
           +item('VALE REGALO', './vale_regalo.html')
           +item('RESERVAR', './reservar.html')
+          +item('FAQ', './faq.html')
         else
           +item('INICIO', './')
           +item('IMÁGENES', './#imagenes')
@@ -22,3 +23,4 @@ nav#navbarEscape.navbar.navbar-escape.navbar-expand-lg.navbar-dark.bg-dark.fixed
           +item('CONTACTAR', './contactar.html')
           +item('VALE REGALO', './vale_regalo.html')
           +item('RESERVAR', './reservar.html')
+          +item('FAQ', './faq.html')
