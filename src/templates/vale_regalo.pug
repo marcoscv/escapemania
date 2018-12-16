@@ -3,11 +3,54 @@
 include includes/_mixins.pug
 include includes/_header.pug
 
-#mainContent.container-fluid
-    .container.p-2.p-sm-5 Sección Vale regalo y tal
+#mainContent.container-fluid.pt-5
+    .bg-dark.row
+        .container.mt-5
+            .row.text-center
+                .col-md-10.mx-auto
+                    img.mt-3(src="images/vale_web.jpg", alt="Vale")
+                    h1.mt-3 ¿Deseas regalar una sesión en nuestro juego de escape?
+                    p Es muy fácil. Puedes comprar nuestro vale regalo y dárselo a la persona que quieres invitar.
+                    p.mb-5 El vale regalo tiene una validez de 90 días y la persona a la que se lo regalas elige el día cuando quiera venir usando el código.
 
-    .container.p-2.p-sm-5 Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate eum, minima facere rem blanditiis a et necessitatibus aliquam quis, earum itaque neque cupiditate aspernatur voluptatibus at repudiandae! Fugit, error!Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate eum, minima facere rem blanditiis a et necessitatibus aliquam quis, earum itaque neque cupiditate aspernatur voluptatibus at repudiandae! Fugit, error!Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate eum, minima facere rem blanditiis a et necessitatibus aliquam quis, earum itaque neque cupiditate aspernatur voluptatibus at repudiandae! Fugit, error!Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate eum, minima facere rem blanditiis a et necessitatibus aliquam quis, earum itaque neque cupiditate aspernatur voluptatibus at repudiandae! Fugit, error!Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate eum, minima facere rem blanditiis a et necessitatibus aliquam quis, earum itaque neque cupiditate aspernatur voluptatibus at repudiandae! Fugit, error!
+    .color-bg-game-1.row
+        .container
+            .row.py-2.py-sm-5
+                .col-md-4
+                    img.img-fluid(src="images/foto-juego-4.jpg", alt="")
+                .col-md-8.text-center
+                    h1.mt-4.mt-md-0 JUEGO 1: El misterio de la familia Van Landen
+                    p Este juego es de una temática con estilo “detective años 30″.
+                        .d-flex.justify-content-center
+                            a.btn.btn-lg.btn-primary.mt-3(href='vale_regalo_1.html')
+                                i.fa.fa-gift
+                                span.px-3 REGALAR
 
-    .container.p-2.p-sm-5 Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate eum, minima facere rem blanditiis a et necessitatibus aliquam quis, earum itaque neque cupiditate aspernatur voluptatibus at repudiandae! Fugit, error!Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate eum, minima facere rem blanditiis a et necessitatibus aliquam quis, earum itaque neque cupiditate aspernatur voluptatibus at repudiandae! Fugit, error!Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate eum, minima facere rem blanditiis a et necessitatibus aliquam quis, earum itaque neque cupiditate aspernatur voluptatibus at repudiandae! Fugit, error!Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate eum, minima facere rem blanditiis a et necessitatibus aliquam quis, earum itaque neque cupiditate aspernatur voluptatibus at repudiandae! Fugit, error!Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate eum, minima facere rem blanditiis a et necessitatibus aliquam quis, earum itaque neque cupiditate aspernatur voluptatibus at repudiandae! Fugit, error!
+    .color-bg-game-2.row
+        .container
+            .row.py-2.py-sm-5
+                .col-md-4
+                    img.img-fluid(src="images/harrison-vinilo-peq.jpg", alt="")
+                .col-md-8.text-center
+                    h1.mt-4.mt-md-0 JUEGO 2: Harrison Jones en busca del Sexto Elemento
+                    p Este juego es de una temática con estilo Indiana Jones.
+                        .d-flex.justify-content-center
+                            a.btn.btn-lg.btn-success.mt-3(href='vale_regalo_2.html')
+                                i.fa.fa-gift
+                                span.px-3 REGALAR
+
+    .color-bg-game-3.row
+        .container
+            .row.py-2.py-sm-5
+                .col-md-4
+                    img.img-fluid(src="images/lilith-peq.jpg", alt="")
+                .col-md-8.text-center
+                    h1.mt-4.mt-md-0 JUEGO 3: La tienda de muñecas de Lilith
+                    p Este juego es de una temática con estilo misterio y terror.
+                    p.small ** Se puede jugar una versión “light” sin miedo, avisando al encargado.
+                        .d-flex.justify-content-center
+                            a.btn.btn-lg.btn-danger.mt-3(href='vale_regalo_3.html')
+                                i.fa.fa-gift
+                                span.px-3 REGALAR
 
 include includes/_footer.pug

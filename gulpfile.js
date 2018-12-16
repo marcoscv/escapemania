@@ -16,7 +16,7 @@ gulp.task('minify-images', () =>
         .pipe(gulp.dest('src/images'))
 );
 
-//minify JS in a single 
+//minify JS in a single
 var jsFiles = 'src/js/*.js',
     jsDest = 'src/js/jsOneFile';
 
@@ -45,7 +45,7 @@ gulp.task('minify-css', () => {
 });
 
 // pug build pages
-gulp.task('pug', function() {  
+gulp.task('pug', function() {
   return gulp.src('src/templates/*.pug')
   .pipe(pug({
     pretty: false,
@@ -71,7 +71,7 @@ gulp.task('serve', ['sass','pug'], () => {
   browserSync.init({
     server: './src'
   });
-  
+
   gulp.watch(['src/templates/**/*.pug','src/templates/**/*.txt'], ['pug']);
   gulp.watch(['src/scss/*.scss'], ['sass','minify-css']);
   gulp.watch(['src/images/**/*'], ['minify-images']);
