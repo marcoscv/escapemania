@@ -2,7 +2,18 @@ doctype
 html
     head
         meta(charset='utf-8')
-        title EscapeMania
+
+        if title
+            title #{title}
+        else
+            title Escape Mania – Sala de escape, escape room en Bilbao
+
+        if description
+            meta(name="description" content=description)
+
+        if keywords
+            meta(name="keywords" content=keywords)
+
         meta(content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport')
         // STYLES
         link(rel='stylesheet' href='css/main.css')
